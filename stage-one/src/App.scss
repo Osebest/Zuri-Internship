@@ -1,0 +1,26 @@
+.links{
+  background-color: #EAECF0;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+
+  &:hover{
+    background-color: darken($color: #EAECF0, $amount: 20);
+  }
+}
+
+.footer{
+  box-shadow: 0 -1px 1px -1px rgb(195, 191, 191);
+  margin-top: 8rem;
+
+  span{
+    color: red;
+    font-weight: 800;
+  }
+
+  @media (max-width:520px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
