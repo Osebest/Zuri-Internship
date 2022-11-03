@@ -3,6 +3,7 @@ import profileImage from "../assets/profile__img.png";
 import slack from "../assets/slack.png";
 import github from "../assets/Icon.png";
 import { Footer } from "./Footer";
+import { Link } from "react-router-dom";
 
 export const Hompage = () => {
   return (
@@ -70,6 +71,13 @@ export const Hompage = () => {
             >
               Design Books
             </a>
+            <Link
+              to={"/contact"}
+              id="contact"
+              className="w-100 btn links py-3 mb-4"
+            >
+              Contact Me
+            </Link>
             <div className="d-flex justify-content-center gap-4 mt-4">
               <img src={slack} alt="slack" />
               <img src={github} alt="github" />
